@@ -24,6 +24,7 @@
     "@emotion/react": "^11.1.1",
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^2.9.5",
+    "mongoose": "^5.11.10",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
