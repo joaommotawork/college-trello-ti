@@ -35,7 +35,6 @@ const ListEditor = (props) => {
     return (
         <div className={styles.ListTitleEdit} ref={ref}>
             <TextareaAutosize
-                autoFocus
                 className={styles.ListTitleTextarea}
                 placeholder="Enter list title..."
                 value={title}

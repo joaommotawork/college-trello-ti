@@ -25,6 +25,7 @@
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^2.9.5",
     "lodash.throttle": "^4.1.1",
+    "mongoose": "^5.11.10",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-beautiful-dnd": "^13.0.0",

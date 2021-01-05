@@ -27,7 +27,6 @@ const CardEditor = (props) => {
         <div className={styles.EditCard}>
             <div className={styles.Card}>
                 <TextareaAutosize
-                    autoFocus
                     className={styles.EditCardTextarea}
                     placeholder="Text Card"
                     value={text}

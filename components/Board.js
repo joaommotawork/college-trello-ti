@@ -52,7 +52,7 @@ const Board = (props) => {
     return (
         <DragDropContext onDragEnd={handleDragEnd}>
             <Droppable droppableId="board" direction="horizontal" type="COLUMN">
-                {(provided, _snapshot) => (
+                {(provided) => (
                     <div className={styles.Board} ref={provided.innerRef}>
                         {board.lists.map((listId, index) => {
                             return (
