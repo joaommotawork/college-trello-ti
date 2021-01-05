@@ -1,0 +1,33 @@
+.List {
+  background: #dfe3e6;
+  flex-shrink: 0;
+  width: 272px;
+  height: fit-content;
+  margin: 10px;
+  margin-right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ListTitle {
+  cursor: pointer;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+
+.ToggleAddCard {
+  cursor: pointer;
+  padding: 10px;
+  color: #6b808c;
+  display: flex;
+  align-items: center;
+}
+
+.ToggleAddCard:hover {
+  background-color: rgba(9, 45, 66, 0.13);
+  color: #17394d;
+  text-decoration: underline;
+}
+
+.ToggleAddCard {
+  margin-right: 2px;
+}
