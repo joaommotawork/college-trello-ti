@@ -35,7 +35,8 @@
     "react-redux": "^7.2.2",
     "react-textarea-autosize": "^8.3.0",
     "sass": "^1.29.0",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.1.0",
