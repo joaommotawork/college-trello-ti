@@ -99,9 +99,26 @@ const updateList = async (id, newInfo) => {
     }
 }
 
+const deleteList = async (id) => {
+    const client = new MongoClient(uri, { useUnifiedTopology: true })
+    try {
+        await client.connect()
+        var res = await client
+            .db('trello-ti')
+            .collection('trello-ti')
+            .deleteOne({ id: id })
+        return res
+    } catch (e) {
+        console.error(e)
+    } finally {
+        await client.close()
+    }
+}
+
 module.exports = {
     getList: getListFromId,
     addList: addNewList,
     getLists: getAllLists,
-    updateList: updateList
+    updateList: updateList,
+    deleteList: deleteList
 }

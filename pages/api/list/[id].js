@@ -19,8 +19,12 @@ export default async function userHandler(req, res) {
             result = await db.updateList(id, body)
             res.status(200).json(result)
             break
+        case 'DELETE':
+            result = await db.deleteList(id)
+            res.status(200).json(result)
+            break
         default:
-            res.setHeader('Allow', ['GET'])
+            res.setHeader('Allow', ['GET', 'PUT', 'DELETE'])
             res.status(405).end(`Method ${method} Not Allowed`)
     }
 }
